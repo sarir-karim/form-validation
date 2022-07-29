@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import User from './User'
-
+import React from "react";
+import FirstCard from './components/CardComponents/FirstCard/Cards'
+import FormOne from './components/FormComponents/FormOne/Index'
+import './App.css'
 function App() {
   return (
-    <div className="App">
-        <h1>Hello World</h1>
-<User/>
-    </div>  
+    <>
+    <FormOne/>
+    </>
   );
 }
 

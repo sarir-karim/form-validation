@@ -1,0 +1,65 @@
+img{
+    max-width: 100%;
+}
+
+.catImg{
+    width: 100%;
+}
+
+.card:hover > img{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+
+.container{
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px
+}
+
+.card{
+    border: 1px solid grey;
+    overflow: hidden;
+    border-radius: 20px;;
+}
+
+.card:hover{
+    box-shadow: 0.5rem 0.5rem rgb(126, 76, 76), -0.5rem -0.5rem #ccc;
+    transition: 1s
+}
+
+
+.card_details{
+    padding: 5px 20px;
+}
+
+.card_heading{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.card_subheading{
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+
+}
+
+.card_desc{
+    font-size: 14px;
+    text-align: justify;
+
+}
+@media(max-width: 998px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
